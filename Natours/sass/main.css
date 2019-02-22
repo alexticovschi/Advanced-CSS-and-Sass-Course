@@ -209,6 +209,10 @@ body {
   margin-top: 12rem !important;
 }
 
+.u-hide-overflow-y {
+  overflow-y: hidden;
+}
+
 .bg-video {
   position: absolute;
   top: 0;
