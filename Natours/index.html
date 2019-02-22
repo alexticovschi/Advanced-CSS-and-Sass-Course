@@ -415,5 +415,18 @@
                 </div>
             </div>
         </section> -->
+
+        <script>
+
+        var navListItems = document.getElementsByClassName("navigation__item");
+
+        // loop through all the elements of the array and assigning them a condition
+        for(link in navListItems){ 
+            navListItems[link].onclick = function(){ // for each item of the array execute the following function when it is clicked.
+                document.getElementById("navi-toggle").checked = false; //close the menu by unchecking the checkbox
+            };  
+        }
+
+        </script>
     </body>
 </html>
