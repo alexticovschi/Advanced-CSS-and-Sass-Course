@@ -18,10 +18,6 @@ html {
         font-size: 50%; //1rem = 8px, 8/16 = 50%
     }
 
-    @include responsive(phone) { // width < 600?
-        font-size: 30%; //1rem = 4.8px
-    }
-
     @include responsive(big-desktop) {
         font-size: 75%; //1rem = 12, 12/16 = 75%
     }
@@ -29,4 +25,9 @@ html {
 
 body {
     box-sizing: border-box; /* borders and paddings are no longer added to the total width and hight that we specify for a box*/
+    padding: 1.5rem;
+
+    @include responsive(tablet-portrait) {
+        padding: 0;
+    }
 }

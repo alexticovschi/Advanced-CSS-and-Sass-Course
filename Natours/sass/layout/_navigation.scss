@@ -15,6 +15,16 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+
+        @include responsive(tablet-portrait) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+
+        @include responsive(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -28,7 +38,14 @@
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
-        // transform: scale(80);
+        @include responsive(tablet-portrait) {
+            top: 3.7rem;
+            right: 3.7rem;
+        }
+        @include responsive(phone) {
+            top: 3.2rem;
+            right: 3.2rem;
+        }
     }
 
     &__nav {
