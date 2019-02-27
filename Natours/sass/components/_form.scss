@@ -16,6 +16,7 @@
         display: block;
         transition: all .3s;
 
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
@@ -50,6 +51,11 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include responsive(tablet-portrait) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {
