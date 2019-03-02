@@ -22,6 +22,12 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .4s .2s;
+
+        @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2rem 4rem rgba($color-black, .3);
+        }
     }
 
     &__left {
