@@ -19,6 +19,13 @@
     --line: 1px solid var(--color-grey-light-2);
 }
 
+$breakpoint-largest: 75em; // 1200px => 1200/16 = 75
+$breakpoint-large: 68.75em; // 1100px => 1100/16 = 68.75
+$breakpoint-medium: 56.25em; // 900px => 900/16 = 56.25
+$breakpoint-small: 37.5em; // 600px => 600/16 = 37.5
+$breakpoint-smallest: 31.25em; // 500px => 500/16 = 31.25
+
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +40,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5
+
+    @media only screen and (max-width: $breakpoint-large) {
+        font-size: 50%;
+    }
 }
 
 body {
